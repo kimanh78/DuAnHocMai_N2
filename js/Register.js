@@ -164,6 +164,7 @@ $inputPhoneNumber.addEventListener('change',function(){
 
 $inputPassword.addEventListener('change',function(){
     $pass.innerHTML = $inputPassword.value;
+    t = $inputPassword.value;
     if($pass.innerHTML == ''){
         $errorInputPassword.innerHTML = 'Mật khẩu không được để trống.';
     } else if( $pass.innerHTML.length < 8){
@@ -175,7 +176,7 @@ $inputPassword.addEventListener('change',function(){
 
 $inputConfirmPassword.addEventListener('change',function(){
     $confirmPass.innerHTML = $inputConfirmPassword.value;
-    if($confirmPass.innerHTML != $pass.innerHTML){
+    if($confirmPass.innerHTML != t){
         $errorInputConfirmPassword = 'Xác nhận mật khẩu không khớp. Vui lòng nhập lại.';
     } else {
         $errorInputConfirmPassword = '';

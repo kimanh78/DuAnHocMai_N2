@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .header{
@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 300px;
+    padding: 0 16%;
     color: white;
     margin-bottom: 30px;
 }
@@ -85,12 +85,16 @@
     font-weight: bolder;
 }
 
+.header .right-side .fa-solid{
+    display: none;
+}
+
 .content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 200px;
+    padding: 0 10%;
     margin-bottom: 50px;
 }
 
@@ -105,7 +109,7 @@
 
 .content .title .intro-text{
     font-size: 14px;
-    padding: 0 600px;
+    padding: 0 20%;
 }
 
 .content .method-login{
@@ -127,7 +131,7 @@
     color: white;
     font-weight: bolder;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .content .method-login .login-by-gg{
@@ -138,10 +142,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 55px 0 10px;
+    padding: 0 70px 0 10px;
     color: white;
     font-weight: bolder;
     font-size: 16px;
+    margin-bottom: 5px;
 }
 
 .content .method-login .login-by-yahoo{
@@ -152,10 +157,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 60px 0 10px;
+    padding: 0 70px 0 10px;
     color: white;
     font-weight: bolder;
     font-size: 16px;
+    margin-bottom: 5px;
 }
 
 .content .method-login .login-by-apple{
@@ -166,10 +172,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 60px 0 10px;
+    padding: 0 80px 0 10px;
     color: white;
     font-weight: bolder;
     font-size: 16px;
+    margin-bottom: 5px;
 }
 
 .content .other-method{
@@ -200,6 +207,7 @@
     font-size: 12px;
     font-style: italic;
     padding: 0px 20px;
+    margin-bottom: 40px;
 }
 
 .content .other-method .note a{
@@ -226,12 +234,8 @@
     margin-bottom: 15px 0;
 }
 
-.content .login .forget-password{
-    text-align: center;
-}
-
 .footer{
-    padding: 0 300px;
+    padding: 0 16%;
     background-image: url(https://hocmai.vn/theme/new2/images/bg-footer.png);
 }
 
@@ -265,3 +269,122 @@
     font-size: 13px;
 }
 
+@media (max-width: 576px){
+    .header{
+        padding: 0 5%;;
+    }
+
+    .header .left-side .custom-menu .course{
+        display: none;
+    }
+
+    .header .left-side{
+        display: flex;
+        gap: 1px;
+    }
+
+    .header .left-side .search-box{
+        background-color: rgb(42, 112, 184);
+    }
+
+    .header .left-side .search-box .fa-solid{
+        color: white;
+    }
+
+    .header .left-side .search-box .search-text{
+        display: none;
+    }
+
+    .header .middle .image{
+        width: 40px;
+        height: 40px;
+    }
+
+    .header .right-side button{
+        display: none;
+    }
+
+    .header .right-side .fa-solid{
+        display: block;
+    }
+
+    .content{
+        padding: 0 5%;
+    }
+
+    .content .title .title-text{
+        font-size: 13px;
+        font-weight: bolder;
+    }
+
+    .content .title .intro-text{
+        font-size: 13px;
+        padding: 0 5%;
+    }
+
+    .content .method-login{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .content .method-login .login-by-fb{
+        padding: 0 80px 0 10px;
+    }
+
+    .content .method-login .login-by-gg{
+        padding: 0 90px 0 10px;
+    }
+
+    .content .method-login .login-by-yahoo{
+        padding: 0 95px 0 10px;
+    }
+
+    .content .method-login .login-by-apple{
+        padding: 0 100px 0 10px;
+    }
+
+    .content .other-method{
+        width: 100%;
+    }
+
+    .content .other-method .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content .other-method .row .col #input-password{
+        margin-bottom: 20px;
+    }
+
+    .content .register .register-button{
+        width: 350px;
+        font-size: 14px;
+    }
+
+    .content .other-method .note{
+        font-size: 11px;
+    }
+    
+    .footer{
+        padding: 0 5%;
+    }
+
+    .footer .footer-option .item{
+        display: none;
+    }
+
+    .footer .footer-option .app-icon{
+        display: block;
+    }
+
+    .footer .footer-option{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .information .bonus-info{
+        display: none;
+    }
+}
